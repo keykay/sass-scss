@@ -1,0 +1,21 @@
+$light-palette: (
+  primary: #003a49,
+  secondary: #0e8080,
+  background: #d2dfe2,
+  contrast: (
+    primary: #e0e9eb,
+    secondary: #FFFFFF,
+    background: #131313
+  )
+);
+
+$dark-palette: (
+  primary: #C6FF00,
+  secondary: #FF9800,
+  background: #263238,
+  contrast: (
+    primary: #333333,
+    secondary: #333333,
+    background: #FAFAFA
+  )
+);

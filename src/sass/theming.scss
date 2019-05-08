@@ -1,0 +1,56 @@
+@mixin apply-theme($palette) {
+  $primary: map-get($palette, "primary");
+  $primary-contrast: map-get(map-get($palette, "contrast"), "primary");
+  $secondary: map-get($palette, "secondary");
+  $secondary-contrast: map-get(map-get($palette, "contrast"), "secondary");
+  $background: map-get($palette, "background");
+  $background-contrast: map-get(map-get($palette, "contrast"), "background");
+
+  .my-panel {
+    background-color: $background;
+
+    > .my-panel-header {
+      background-color: $primary;
+      color: $primary-contrast;
+    }
+
+    > .my-panel-body {
+      color: $background-contrast;
+    }
+
+    > .my-panel-footer {
+      button {
+        border-color: $background-contrast;
+      }
+
+      button[type="button"] {
+        background-color: grayscale(complement($background));
+        color: set-text-color(grayscale(complement($background)));
+
+        &:hover {
+          background-color: scale-color(
+            $color: grayscale(complement($background)),
+            $lightness: 20%
+          );
+        }
+      }
+
+      button[type="submit"] {
+        background-color: $secondary;
+        color: $secondary-contrast;
+
+        &:hover {
+          background-color: scale-color($color: $secondary, $lightness: 20%);
+        }
+      }
+    }
+  }
+}
+
+@function set-text-color($background) {
+  @if (lightness($background) > 50) {
+    @return black;
+  } @else {
+    @return white;
+  }
+}
