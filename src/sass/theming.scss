@@ -1,5 +1,4 @@
 @mixin apply-theme($palette) {
-  
   $primary: map-get($palette, "primary");
   $primary-contrast: map-get(map-get($palette, "contrast"), "primary");
   $secondary: map-get($palette, "secondary");
@@ -12,7 +11,11 @@
   }
 
   .my-panel {
-    background-color: scale-color($color: $background, $saturation: -30%, $lightness: 20%);
+    background-color: scale-color(
+      $color: $background,
+      $saturation: -30%,
+      $lightness: 20%
+    );
     border-color: invert($background);
 
     > .my-panel-header {
