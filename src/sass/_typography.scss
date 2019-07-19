@@ -1,0 +1,34 @@
+@mixin apply-typography($config) {
+  .my-panel {
+    font: map-get($config, "text");
+
+    > .my-panel-header {
+      > .title {
+        font: map-get($config, "title");
+        padding: 0.2em 0;
+        margin: 0;
+      }
+
+      > .subtitle {
+        font: map-get($config, "subtitle");
+        padding: 0.2em 0;
+        margin: 0;
+      }
+    }
+
+    > .my-panel-body {
+      font: map-get($config, "text");
+    }
+
+    > .my-panel-footer {
+      button {
+        font: map-get($config, "subtitle");
+        font-weight: bold;
+
+        @if map-get($config, "uppercase-buttons") {
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}

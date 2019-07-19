@@ -1,0 +1,110 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.light-theme.main-container {
+  background-color: #d2dfe2;
+}
+.light-theme .my-panel {
+  background-color: #dde4e6;
+  border-color: #2d201d;
+}
+.light-theme .my-panel > .my-panel-header {
+  background-color: #003a49;
+  color: #e0e9eb;
+}
+.light-theme .my-panel > .my-panel-body {
+  color: #131313;
+}
+.light-theme .my-panel > .my-panel-footer button {
+  border-color: #131313;
+}
+.light-theme .my-panel > .my-panel-footer button[type=button] {
+  background-color: #dadada;
+  color: black;
+}
+.light-theme .my-panel > .my-panel-footer button[type=button]:hover {
+  background-color: #e1e1e1;
+}
+.light-theme .my-panel > .my-panel-footer button[type=submit] {
+  background-color: #0e8080;
+  color: #FFFFFF;
+}
+.light-theme .my-panel > .my-panel-footer button[type=submit]:hover {
+  background-color: #15c2c2;
+}
+.light-theme .my-panel {
+  font: 11pt Georgia;
+}
+.light-theme .my-panel > .my-panel-header > .title {
+  font: bold 16pt arial;
+  padding: 0.2em 0;
+  margin: 0;
+}
+.light-theme .my-panel > .my-panel-header > .subtitle {
+  font: 14pt arial;
+  padding: 0.2em 0;
+  margin: 0;
+}
+.light-theme .my-panel > .my-panel-body {
+  font: 11pt Georgia;
+}
+.light-theme .my-panel > .my-panel-footer button {
+  font: 14pt arial;
+  font-weight: bold;
+}
+
+.dark-theme.main-container {
+  background-color: #263238;
+}
+.dark-theme .my-panel {
+  background-color: #4d5d64;
+  border-color: #d9cdc7;
+}
+.dark-theme .my-panel > .my-panel-header {
+  background-color: #C6FF00;
+  color: #333333;
+}
+.dark-theme .my-panel > .my-panel-body {
+  color: #FAFAFA;
+}
+.dark-theme .my-panel > .my-panel-footer button {
+  border-color: #FAFAFA;
+}
+.dark-theme .my-panel > .my-panel-footer button[type=button] {
+  background-color: #2f2f2f;
+  color: white;
+}
+.dark-theme .my-panel > .my-panel-footer button[type=button]:hover {
+  background-color: #595959;
+}
+.dark-theme .my-panel > .my-panel-footer button[type=submit] {
+  background-color: #FF9800;
+  color: #333333;
+}
+.dark-theme .my-panel > .my-panel-footer button[type=submit]:hover {
+  background-color: #ffad33;
+}
+.dark-theme .my-panel {
+  font: 14pt "Times New Roman";
+}
+.dark-theme .my-panel > .my-panel-header > .title {
+  font: bold 24pt "Times New Roman";
+  padding: 0.2em 0;
+  margin: 0;
+}
+.dark-theme .my-panel > .my-panel-header > .subtitle {
+  font: italic 20pt Helvetica;
+  padding: 0.2em 0;
+  margin: 0;
+}
+.dark-theme .my-panel > .my-panel-body {
+  font: 14pt "Times New Roman";
+}
+.dark-theme .my-panel > .my-panel-footer button {
+  font: italic 20pt Helvetica;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=styles-output.css.map */
